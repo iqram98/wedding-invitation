@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fira+Sans:wght@300;400&family=Luxurious+Script&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-luxurious: 'Luxurious Script', cursive;
+  --font-fira: 'Fira Sans', sans-serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --color-background-color: #f6f4f0;
+  --color-primary-color: #0a1413;
+  --color-secondary-color: #ede3d7;
+  --color-tertiary-color: #415e29;
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  --animate-fade-in: fade-in 2.5s ease-in-out;
+
+  @keyframes ascend {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  --animate-ascend: ascend 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
