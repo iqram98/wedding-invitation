@@ -137,7 +137,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import CountDown from "../components/CountDown.vue";
+import CountDown from "../components/Countdown.vue";
 import Gallery from "../components/Gallery.vue";
 import RSVP from "../components/RSVP.vue";
 import Schedule from "../components/Schedule.vue";
