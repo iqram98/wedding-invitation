@@ -1,6 +1,6 @@
 <template>
     <div class="bg-secondary-color h-[90%] w-[90%] rounded-[5%] font-cormorant tracking-widest flex flex-col items-center justify-center text-center">
-        <h3 class="font-luxurious text-4xl font-semibold text-center mb-4 z-10">Wedding Wish</h3>
+        <h3 class="font-luxurious text-4xl font-semibold text-center mb-4 z-5">Wedding Wish</h3>
         <form
             @submit.prevent="submitForm"
             class="w-[95%]"
@@ -46,7 +46,7 @@
                 Send
             </button>
         </form>
-        <div class="mt-4 w-full px-2 h-[40%] overflow-auto z-100">
+        <div class="mt-4 w-full px-2 h-[40%] overflow-auto z-5">
             <div v-for="item in response" class="text-sm mb-2 flex flex-col items-start border-y border-gray-300 px-5 py-4" :key="item.id">
                 <h3 class="font-bold font-xs">{{ item.name }}</h3>
                 <p class="font-xs">{{ item.message }}</p>

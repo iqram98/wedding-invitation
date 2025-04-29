@@ -1,6 +1,6 @@
 <template>
     <div class="snap-y snap-mandatory w-screen overflow-x-hidden h-screen overflow-y-scroll scroll-smooth">
-        <nav class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-10 w-3/5">
+        <nav class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-100 w-3/5">
             <ul class="flex justify-around bg-lime-800 text-secondary-color p-1 rounded-full shadow-lg">
                 <li>
                     <a
@@ -44,6 +44,18 @@
                 </li>
             </ul>
         </nav>
+        <audio
+            autoplay
+            loop
+            src="/bgmusic.mp3"
+        ></audio>
+        <div
+            class="fixed bottom-20 right-5 z-100 w-8 h-8 text-tertiary-color border-tertiary-color border-1 rounded-full p-2 flex items-center justify-center cursor-pointer animate-spin-slow"
+            @click="tooglePlayMusic"
+        >
+            <span class="material-icons text-sm" v-if="playMusic">volume_up</span>
+            <span class="material-icons text-sm" v-else>volume_mute</span>
+        </div>
         <!-- Section 1 -->
         <section
             id="section1"
@@ -145,12 +157,25 @@ import Mukaddimah from "../components/Mukaddimah.vue";
 import Bride from "../components/Bride.vue";
 import Date from "../components/Date.vue";
 
+let playMusic = ref(true);
+
 const countdown = ref({
     days: "--",
     hours: "--",
     minutes: "--",
     seconds: "--",
 });
+
+function tooglePlayMusic() {
+    const audio = document.querySelector("audio");
+    if (!playMusic.value) {
+        audio.play();
+        playMusic.value = true;
+    } else {
+        audio.pause();
+        playMusic.value = false;
+    }
+}
 
 function updateCountdown() {
     const eventDate = new window.Date("2025-06-16T10:00:00");

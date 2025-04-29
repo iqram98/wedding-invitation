@@ -35,5 +35,16 @@
   }
   
   --animate-ascend: ascend 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+
+  @keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+  --animate-spin-slow: spin-slow 3s linear infinite;
 }
 
