@@ -1,5 +1,5 @@
 <template>
-    <div class="font-cormorant flex flex-col items-center justify-center">
+    <div ref="thanks" class="font-cormorant flex flex-col items-center justify-center">
         <div class="tracking-[.25em] text-center px-5">
             <h1
                 class="text-2xl font-bold mb-4"
@@ -58,7 +58,7 @@ export default {
             { threshold: 0.1 } // Trigger when 10% of the element is visible
         );
 
-        observer.observe(this.$refs.mukaddimah);
+        observer.observe(this.$refs.thanks);
     },
 };
 </script>
