@@ -1,5 +1,5 @@
 <template>
-    <div class="snap-y snap-mandatory w-screen overflow-x-hidden h-screen overflow-y-scroll scroll-smooth">
+    <div class="snap-y snap-mandatory overflow-x-hidden h-screen overflow-y-scroll scroll-smooth">
         <nav class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-100 w-3/5">
             <ul class="flex justify-around bg-lime-800 text-secondary-color p-1 rounded-full shadow-lg">
                 <li>
@@ -69,7 +69,7 @@
             id="section1"
             class="snap-start relative text-center py-10 bg-secondary-color shadow-sm min-h-screen flex items-center justify-center flex-col"
         >
-            <div class="mask-b-from-30% mask-b-to-80% bg-[url('/background-image.png')] bg-linear-to-b bg-cover bg-center bg-no-repeat animate-fade-in w-screen h-screen absolute"></div>
+            <div class="mask-b-from-30% mask-b-to-80% bg-[url('/background-image.png')] bg-linear-to-b bg-cover bg-center bg-no-repeat animate-fade-in h-screen absolute"></div>
             <img
                 src="/flower1.png"
                 alt="Flower"
