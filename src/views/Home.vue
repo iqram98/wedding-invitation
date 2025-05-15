@@ -73,12 +73,14 @@
             <img
                 src="/flower1.png"
                 alt="Flower"
-                class="absolute -top-4 -right-20 w-60 h-60"
+                class="absolute -top-4 -right-20 w-60 h-60 animate-tilt"
+                style="animation-delay: 0.8s; animation-fill-mode: forwards"
             />
             <img
                 src="/flower1.png"
                 alt="Flower"
-                class="absolute -top-4 -left-20 w-60 h-60 transform -scale-x-100"
+                class="absolute -top-4 -left-20 w-60 h-60 transform -scale-x-100 animate-tilt"
+                style="animation-delay: 0.8s; animation-fill-mode: forwards"
             />
             <CountDown :countdown="countdown" />
         </section>
