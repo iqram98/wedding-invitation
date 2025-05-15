@@ -69,7 +69,7 @@
             id="section1"
             class="snap-start relative text-center py-10 bg-secondary-color shadow-sm min-h-screen flex items-center justify-center flex-col"
         >
-            <div class="mask-b-from-30% mask-b-to-80% bg-[url('/background-image.png')] bg-linear-to-b bg-cover bg-center bg-no-repeat animate-fade-in h-screen absolute"></div>
+            <div class="mask-b-from-30% mask-b-to-80% bg-[url('/background-image.png')] bg-linear-to-b bg-cover bg-center bg-no-repeat animate-fade-in w-full h-screen absolute"></div>
             <img
                 src="/flower1.png"
                 alt="Flower"
