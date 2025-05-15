@@ -3,13 +3,13 @@
         <h5 class="text-sm">The Wedding of</h5>
         <div class="grid grid-cols-5 mt-5 mb-4 text-2xl">
             <div class="text-center col-span-2">
-                <p>VIVI</p>
+                <p>Iqram</p>
             </div>
             <div class="text-center">
                 <p>&</p>
             </div>
             <div class="text-center col-span-2">
-                <p>NUGET</p>
+                <p>Yaumil</p>
             </div>
         </div>
         <h3 class="text-3xl mt-20 font-semibold mb-4">16 - 06 - 2025</h3>

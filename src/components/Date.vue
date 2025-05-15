@@ -12,6 +12,16 @@
             <p class="text-xs">Pukul <span class="font-fira">10.00</span> WITA</p>
             <p class="text-xs">Perumnas Bentenge Blok B No. 78</p>
             <p class="text-xs">Kec. Mandai, Kab. Maros</p>
+            <p class="text-xs">
+                <a 
+                    href="https://maps.app.goo.gl/wiL1JjdVMsEZ6Eok6" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-tertiary-color underline"
+                >
+                    Lihat di Google Maps
+                </a>
+            </p>
         </div>
         <div class="my-4 w-3/4">
             <h3 class="font-luxurious text-4xl">Resepsi</h3>
@@ -23,7 +33,17 @@
             <p class="mb-2">2025</p>
             <p class="text-xs">Pukul <span class="font-fira">10.00</span> WITA</p>
             <p class="text-xs">Masjid Al-Markaz Al-Islami Maros</p>
-            <p class="text-xs">Jl. Poros Makassar-Maros (Depan Kantor Bupati Maros)</p>
+            <p class="text-xs">Jl. Poros Makassar-Maros (Depan Kantor Bupati Maros)</p>           
+            <p class="text-xs">
+                <a 
+                    href="https://maps.app.goo.gl/PEWvsv8pGZdyD61f9" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-tertiary-color underline"
+                >
+                    Lihat di Google Maps
+                </a>
+            </p>
         </div>
     </div>
 </template>

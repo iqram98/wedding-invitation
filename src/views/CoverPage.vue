@@ -1,6 +1,6 @@
 <template>
     <div
-        class="font-cormorant tracking-[.25em] min-h-screen flex items-center justify-evenly flex-col text-black relative bg-[url('/backgorund-image.png')] bg-cover bg-center bg-no-repeat animate-fade-in"
+        class="font-cormorant tracking-[.25em] min-h-screen flex items-center justify-evenly flex-col text-black relative bg-[url('/background-image.png')] bg-cover bg-center bg-no-repeat animate-fade-in"
         style="animation-delay: 0.5s; opacity: 0; animation-fill-mode: forwards"
     >
         <div class="flex flex-col items-center justify-center">
@@ -20,7 +20,7 @@
                 <div class="text-center col-span-2">
                     <p>
                         <span
-                            v-for="(char, index) in vivi"
+                            v-for="(char, index) in nuget"
                             :key="index"
                             class="animate-fade-in"
                             :style="{ animationDelay: `${0.5 + index * 0.1}s`, animationIterationCount: 'infinite', opacity: 0 }"
@@ -40,7 +40,7 @@
                 <div class="text-center col-span-2">
                     <p>
                         <span
-                            v-for="(char, index) in nuget"
+                            v-for="(char, index) in vivi"
                             :key="index"
                             class="animate-fade-in"
                             :style="{ animationDelay: `${0.5 + index * 0.1}s`, animationIterationCount: 'infinite', opacity: 0 }"
@@ -58,9 +58,9 @@
             </p>
         </div>
 
-        <div class="p-6 rounded-xl text-center z-10 text-secondary-color">
+        <div class="p-6 rounded-xl text-center z-10 text-white">
             <p
-                class="text-sm font-thin tracking-widest mb-2 animate-fade-in"
+                class="text-sm tracking-widest mb-2 animate-fade-in"
                 style="animation-delay: 1s; opacity: 0; animation-fill-mode: forwards"
             >
                 Kepada Yang Terhormat:
@@ -72,7 +72,7 @@
                 {{ guestName }}
             </p>
             <p
-                class="text-sm tracking-widest font-thin animate-fade-in"
+                class="text-sm tracking-widest animate-fade-in"
                 style="animation-delay: 1.5s; opacity: 0; animation-fill-mode: forwards"
             >
                 Di Tempat
@@ -91,8 +91,8 @@
 import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
-const vivi = "VIVI";
-const nuget = "NUGET";
+const vivi = "Yaumil";
+const nuget = "Iqram";
 // Extract the name from the URL path
 const guestName = decodeURIComponent(route.params.name || "Tanpa Nama");
 

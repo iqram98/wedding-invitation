@@ -42,6 +42,14 @@
                         <span class="material-icons text-sm">mail</span>
                     </a>
                 </li>
+                <li>
+                    <a
+                        href="#section6"
+                        class="flex items-center justify-center w-8 h-8"
+                    >
+                        <span class="material-icons text-sm">photo</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <audio
@@ -61,7 +69,7 @@
             id="section1"
             class="snap-start relative text-center py-10 bg-secondary-color shadow-sm min-h-screen flex items-center justify-center flex-col"
         >
-            <div class="mask-b-from-30% mask-b-to-70% bg-[url('/backgorund-image.png')] bg-linear-to-b bg-cover bg-center bg-no-repeat animate-fade-in w-screen h-screen absolute"></div>
+            <div class="mask-b-from-30% mask-b-to-80% bg-[url('/background-image.png')] bg-linear-to-b bg-cover bg-center bg-no-repeat animate-fade-in w-screen h-screen absolute"></div>
             <img
                 src="/flower1.png"
                 alt="Flower"
@@ -128,6 +136,7 @@
                 class="absolute bottom-0 -left-10 w-50 opacity-50"
             />
         </section>
+        <!-- Section 5 -->
         <section
             id="section5"
             class="relative snap-start flex items-center justify-center h-screen bg-background-color text-primary-color pb-10"
@@ -144,15 +153,49 @@
                 class="absolute bottom-0 -left-10 w-50 opacity-50"
             />
         </section>
+        <!-- Section 6 -->
+         <section
+            id="section6"
+            class="relative snap-start flex items-center justify-center h-screen bg-background-color text-primary-color pb-10"
+        >
+            <Gallery />
+            <img
+                src="/flower1.png"
+                alt="Flower"
+                class="absolute -top-8 -right-30 w-80 max-w-none opacity-50"
+            />
+            <img
+                src="/flower2.png"
+                alt="Flower"
+                class="absolute bottom-0 -left-10 w-50 opacity-50 z-1"
+            />
+        </section>
+        <!-- Section 7 -->
+        <section
+            id="section7"
+            class="relative snap-start flex items-center justify-center h-screen bg-background-color text-primary-color pb-10"
+        >
+            <img
+                src="/flower1.png"
+                alt="Flower"
+                class="absolute -top-8 -right-30 w-80 max-w-none opacity-50"
+            />
+            <!-- <img
+                src="/flower2.png"
+                alt="Flower"
+                class="absolute bottom-0 -left-10 w-50 opacity-50 z-1"
+            /> -->
+            <Thanks />
+        </section>
     </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
-import CountDown from "../components/Countdown.vue";
+import CountDown from "../components/CountDown.vue";
 import Gallery from "../components/Gallery.vue";
 import RSVP from "../components/RSVP.vue";
-import Schedule from "../components/Schedule.vue";
+import Thanks from "../components/Thanks.vue";
 import Mukaddimah from "../components/Mukaddimah.vue";
 import Bride from "../components/Bride.vue";
 import Date from "../components/Date.vue";
