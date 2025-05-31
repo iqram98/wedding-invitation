@@ -97,6 +97,16 @@ const nuget = "Iqram";
 const guestName = decodeURIComponent(route.params.name || "Tanpa Nama");
 
 function openInvitation() {
+    const elem = document.documentElement;
+
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen(); // Safari
+    } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen(); // IE11
+    }
     router.push({ name: "Home", params: { name: route.params.name } });
 }
+
 </script>
