@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CoverPage from "../views/CoverPage.vue";
 import Home from "../views/Home.vue";
+import Share from "../views/Share.vue";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
             }
         },
     },
+    {
+        path: "/share",
+        name: "Share",
+        component: Share
+    }
 ];
 
 const router = createRouter({
