@@ -54,7 +54,7 @@
                 class="text-xs animate-fade-in"
                 style="animation-delay: 0.8s; opacity: 0; animation-fill-mode: forwards"
             >
-                JULY 16th 2025
+                JUNE 16th 2025
             </p>
         </div>
 
